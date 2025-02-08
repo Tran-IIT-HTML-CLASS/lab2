@@ -28,28 +28,32 @@ body {
 }
 
 .main {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%; /* Ensures the field takes the full width */
+  margin: 10px auto;
   font-size: 1.5em;
-  text-align: right;
+  text-align: left; /* Align input and label properly */
 }
 
 label {
   display: block;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%; /* Ensure labels take full width */
+  margin-bottom: 5px;
 }
-input[type="text"], input[type="email"], input[type="date"] {
-  width: 95%;
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"] {
+  width: 100%; /* Take full width */
   padding: 12px;
   margin: 10px 0;
   font-size: 1rem;
   box-sizing: border-box;
+  text-align: left; /* Align text to left */
 }
+
 #submit {
   margin: 10px auto;
   padding: 0 15px;
 }
+
 /* Media Query for smaller devices (Mobile-first approach) */
 @media only screen and (max-width: 600px) {
   #wrapper {
@@ -58,15 +62,11 @@ input[type="text"], input[type="email"], input[type="date"] {
   
   .main {
     display: block;
+    width: 100%; /* Ensure inputs are full width */
   }
   
   input[type="text"], input[type="email"], input[type="date"] {
     width: 100%;
-  }
-  
-  /* Make the text box appear below on mobile */
-  .form-container {
-    display: block;
   }
 }
 
@@ -78,17 +78,14 @@ input[type="text"], input[type="email"], input[type="date"] {
   
   .main {
     display: block;
+    width: 100%;
   }
   
-  /* Adjust input box size if necessary */
   input[type="text"], input[type="email"], input[type="date"] {
     width: 95%;
   }
-  
-  .form-container {
-    display: block;
-  }
 }
+
 /* Styling checkboxes */
 .checkbox-group {
   font-size: 1.2em; /* Increase font size for checkboxes */
@@ -117,19 +114,13 @@ input[type="text"], input[type="email"], input[type="date"] {
   }
 
   .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Align the text box to the right on desktop */
-  .form-container {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
+    width: 45%; /* Adjust this for two-column layouts */
+    text-align: left; /* Ensure the text and inputs are aligned */
   }
 
   input[type="text"], input[type="email"], input[type="date"] {
-    width: 60%; /* Adjust this width if you want more space */
+    width: 100%;
   }
 }
 
