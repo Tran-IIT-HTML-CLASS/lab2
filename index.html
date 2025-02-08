@@ -18,13 +18,34 @@
       <div class="main"><label>Email: <input type="email"></label></div>
       <div class="main"><label>Phone: <input type="text"></label></div>
       <div class="main"><label>DoB: <input type="date"></label></div>
+      <div class="main"><label>Gender: <input type="text"></label></div>
     </div>
   </fieldset>
   
   <!-- Equipment Checklist Section -->
   <fieldset>
     <legend id="form_title">Equipment Checklist</legend>
-    <p>Please let me know by checking the boxes which equipment our team needs.</p>
+    <p>Please let me know by checking the boxes which equipment our Team needs.</p>
+    <div class="checkbox-group">
+      <label for="helmets">
+        <input type="checkbox" id="helmets" name="equipment">
+        Helmets
+      </label>
+      <label for="gloves">
+        <input type="checkbox" id="gloves" name="equipment">
+        Gloves
+      </label>
+      <label for="batting">
+        <input type="checkbox" id="batting" name="equipment">
+        Batting Equipment
+      </label>
+    </div>
+  </fieldset>
+  
+  <!-- Dietary Preferences Section -->
+  <fieldset>
+    <legend id="form_title">Dietary Preferences</legend>
+    <p>Please let me know what allergies you may have or potential foods you would like catered at Team Meetings.</p>
     <div class="checkbox-group">
       <label for="helmets">
         <input type="checkbox" id="helmets" name="equipment">
