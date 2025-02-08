@@ -8,15 +8,25 @@
   <link rel="stylesheet" media="screen" href="css/screen.css">
 </head>
 <body>
-  <h1 id="header">Registration Form</h1>
+  <h1 id="header">Player Registration Form</h1>
   <fieldset>
     <legend id="form_title">Personal Information</legend>
     <div id="wrapper">
+      <div class="main"><label>Name: <input type="text"></label></div>
       <div class="main"><label>Email Address: <input type="email"></label></div>
       <div class="main"><label>Phone Number: <input type="text"></label></div>
       <div class="main"><label>Date of Birth: <input type="date"></label></div>
     </div>
-    <div><input type="submit" value="Submit"></div>
   </fieldset>
+  <fieldset>
+    <legend id="form_title">Equipment Checklist</legend>
+    <p>Please let me know by checking the boxes which equipment our team needs.</p>
+    <div id="wrapper">
+      <div class="main"><label>Helmets<input type="checkbox"></label></div>
+      <div class="main"><label>Gloves<input type="checkbox"></label></div>
+      <div class="main"><label>Shoes<input type="checkbox"></label></div>
+    </div>
+  </fieldset>
+  <div><input type="submit" value="Submit"></div>
 </body>
 </html>
