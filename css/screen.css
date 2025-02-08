@@ -86,6 +86,21 @@ input[type="text"], input[type="email"], input[type="date"] {
     display: block;
   }
 }
+/* Styling checkboxes */
+.checkbox-group {
+  font-size: 1.2em; /* Increase font size for checkboxes */
+  margin-top: 20px;
+}
+
+.checkbox-group label {
+  display: block;
+  margin: 12px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px; /* Add space between the checkbox and the label */
+  transform: scale(1.2); /* Make the checkbox itself larger */
+}
 
 /* Media Query for large devices (Desktops) */
 @media only screen and (min-width: 1025px) {

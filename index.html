@@ -9,6 +9,8 @@
 </head>
 <body>
   <h1 id="header">Player Registration Form</h1>
+  
+  <!-- Personal Information Section -->
   <fieldset>
     <legend id="form_title">Personal Information</legend>
     <div id="wrapper">
@@ -18,23 +20,29 @@
       <div class="main"><label>DoB: <input type="date"></label></div>
     </div>
   </fieldset>
+  
+  <!-- Equipment Checklist Section -->
   <fieldset>
     <legend id="form_title">Equipment Checklist</legend>
     <p>Please let me know by checking the boxes which equipment our team needs.</p>
-    <label for="news">
-      <input type="checkbox">
-      Helmets
-    </label>
-    <label for="updates">
-      <input type="checkbox">
-      Gloves
-    </label>
-    <label for="offers">
-      <input type="checkbox">
-      Batting Equipment
-    </label>
-  </div>
+    <div class="checkbox-group">
+      <label for="helmets">
+        <input type="checkbox" id="helmets" name="equipment">
+        Helmets
+      </label>
+      <label for="gloves">
+        <input type="checkbox" id="gloves" name="equipment">
+        Gloves
+      </label>
+      <label for="batting">
+        <input type="checkbox" id="batting" name="equipment">
+        Batting Equipment
+      </label>
+    </div>
   </fieldset>
+
+  <!-- Submit Button -->
   <div><input type="submit" value="Submit"></div>
+
 </body>
 </html>
