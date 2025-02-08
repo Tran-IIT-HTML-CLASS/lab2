@@ -8,49 +8,48 @@
   <link rel="stylesheet" media="screen" href="css/screen.css">
 </head>
 <body>
+  <form action="/submit" method="post" autocomplete="on">
   <h1 id="header">Player Registration Form</h1>
-  
-  <!-- Personal Information Section -->
-  <fieldset>
-    <legend id="form_title">Personal Information</legend>
-    <div id="wrapper">
-      <div class="main"><label>Name: <input type="text"></label></div>
-      <div class="main"><label>Email: <input type="email"></label></div>
-      <div class="main"><label>Phone: <input type="text"></label></div>
-      <div class="main"><label>DoB: <input type="date"></label></div>
-      <div class="main"><label>Gender: <input type="text"></label></div>
-    </div>
-  </fieldset>
-  
-  <!-- Equipment Checklist Section -->
-  <fieldset>
-    <legend id="form_title">Equipment Checklist</legend>
-    <p>Please let me know by checking the boxes which equipment our Team needs.</p>
-    <div class="checkbox-group">
-      <label for="helmets">
-        <input type="checkbox" id="helmets" name="equipment">
-        Helmets
-      </label>
-      <label for="gloves">
-        <input type="checkbox" id="gloves" name="equipment">
-        Gloves
-      </label>
-      <label for="batting">
-        <input type="checkbox" id="batting" name="equipment">
-        Batting Equipment
-      </label>
-    </div>
-  </fieldset>
-  
-  <!-- Dietary Preferences Section -->
-  <fieldset>
-    <legend id="form_title">Dietary Preferences</legend>
-    <p>Please let me know what allergies you may have or potential foods you would like catered at Team Meetings.</p>
-    <div class="main"><input type="text"></div>
-  </fieldset>
-
-  <!-- Submit Button -->
-  <div><input type="submit" value="Submit"></div>
-
+  <div id="wrapper">
+    <!-- Personal Information Section -->
+    <fieldset>
+      <legend class="form_title">Personal Information</legend>
+        <div class="main"><label>Name: <input type="text"></label></div>
+        <div class="main"><label>Email: <input type="email" required autocomplete="email" placeholder="example@email.com"></label></div>
+        <div class="main"><label>Phone: <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label></div>
+        <div class="main"><label>DoB: <input type="date"></label></div>
+        <div class="main"><label>Gender: <input type="text"></label></div>
+    </fieldset>
+    
+    <!-- Equipment Checklist Section -->
+    <fieldset>
+      <legend class="form_title">Equipment Checklist</legend>
+      <p>Please let me know by checking the boxes which equipment our Team needs.</p>
+      <div class="checkbox-group">
+        <label for="helmets">
+          <input type="checkbox" id="helmets" name="equipment">
+          Helmets
+        </label>
+        <label for="gloves">
+          <input type="checkbox" id="gloves" name="equipment">
+          Gloves
+        </label>
+        <label for="batting">
+          <input type="checkbox" id="batting" name="equipment">
+          Batting Equipment
+        </label>
+      </div>
+    </fieldset>
+    
+    <!-- Dietary Preferences Section -->
+    <fieldset>
+      <legend class="form_title">Dietary Preferences</legend>
+      <p>Please let me know what allergies you may have or potential foods you would like catered at Team Meetings.</p>
+      <div><input type="text"></div>
+      <!-- Submit Button -->
+      <div id="submit"><input type="submit" value="Submit"></div>
+    </fieldset>
+  </div>
+  </form>
 </body>
 </html>
